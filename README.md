@@ -121,13 +121,13 @@ Generate a visual adversarial example within a distortion constraint of epsilon 
 The argument can be adjusted (e.g., --eps=32,64,128) to evaluate the effectiveness of the attacks under different distortion budgets.
 
 ```bash
-python minigpt_visual_attack.py --cfg-path eval_configs/minigpt4_eval.yaml  --gpu-id 0 --n_iters 5000 --constrained --eps 16 --alpha 1 --save_dir visual_constrained_eps_16
+python minigpt_visual_attack.py --cfg_path eval_configs/minigpt4_eval.yaml  --gpu_id 0 --n_iters 5000 --constrained --eps 16 --alpha 1 --save_dir visual_constrained_eps_16
 ```
 
 When there is no need for "visual stealthiness", one can use the following command to run unconstrained attacks (the adversarial image can take any values within the legitimate range of pixel values).
 
 ```bash
-python minigpt_visual_attack.py --cfg-path eval_configs/minigpt4_eval.yaml  --gpu-id 0 --n_iters 5000  --alpha 1 --save_dir visual_unconstrained
+python minigpt_visual_attack.py --cfg_path eval_configs/minigpt4_eval.yaml  --gpu_id 0 --n_iters 5000  --alpha 1 --save_dir visual_unconstrained
 ```
 
 <br>
